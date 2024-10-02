@@ -1,0 +1,85 @@
+nav {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  margin: 0;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 13px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d32f2f; /* Darker red */
+}
+
+.body {
+  display: flex;
+  height: calc(100vh - 60px); /* Adjust height based on navbar */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f1f1f1; /* Light grey */
+  padding: 15px;
+  border-right: 1px solid #ccc;
+}
+
+.messagebody {
+  flex-grow: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* White */
+  overflow-y: auto; /* Vertical scroll */
+}
+
+.messages-container {
+  flex-grow: 1; /* Make the messages area grow */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.sendingBox {
+  background-color: #e7e7e7; /* Light grey for sending box */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Align input and button */
+}
+
+.sendingBox input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Optional border for the input */
+  border-radius: 5px; /* Optional rounded corners */
+}
+
+.sendingBox button {
+  margin-left: 10px; /* Space between input and button */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    border-right: none; 
+    border-bottom: 1px solid #ccc; 
+  }
+
+  .body {
+    flex-direction: column;
+}
+}

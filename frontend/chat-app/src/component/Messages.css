@@ -1,0 +1,24 @@
+.sent {
+    text-align: right; /* Aligns text to the right */
+    margin: 10px 0; /* Optional: Adds some margin for spacing */
+  }
+  
+  .received {
+    text-align: left; /* Aligns text to the left */
+    margin: 10px 0; /* Optional: Adds some margin for spacing */
+  }
+  
+  /* Additional styles to give better visual feedback */
+  .sent .message-content {
+    background-color: #dcf8c6; /* Light green background for sent messages */
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block; /* To fit the content */
+  }
+  
+  .received .message-content {
+    background-color: #ffffff; /* White background for received messages */
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block; /* To fit the content */
+  }
